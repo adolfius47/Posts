@@ -48,7 +48,7 @@
 			this.setState({markForPost:e})			
 		}
 		addNewPost(){
-			if(this.state.valueNewPost.length>3&&this.state.userForNewPost.length>3){
+			if(this.state.valueNewPost.length>2&&this.state.userForNewPost.length>2){
 				this.props.dispatch(AddPost({
 					user:this.state.userForNewPost,
 					post:this.state.valueNewPost,
@@ -74,7 +74,9 @@
 		}
 
 		deletePosts(){
+			if(this.props.Posts.data.length>0&&confirm("Удалить все посты?")){
 			this.props.dispatch(DeletePosts())
+			}
 		}
 		AddMarkAndComment(e){
 			this.setState({isWritingCommentWithMark:true,

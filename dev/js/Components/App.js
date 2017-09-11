@@ -22,13 +22,9 @@ class App extends Component {
 
         return <div>
             {dropDown}
-            <div className="row">
-                <div className="col-lg-12">
+            <div className="app">
                     {access}
-
-
                 </div>
-            </div>
         </div>
     }
 }

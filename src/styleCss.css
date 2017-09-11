@@ -1,3 +1,6 @@
+.app {
+  margin-top: 20px; }
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -6,13 +9,17 @@
   width: 1100px; }
 
 .page-title {
+  border-bottom: 2px solid lightgray;
   text-align: center;
-  margin-top: 100px; }
+  margin-top: 100px;
+  display: flex;
+  justify-content: center; }
   .page-title .page-title__word {
     margin: 50px;
     padding: 30px;
     border-radius: 10px;
-    border: 2px solid grey; }
+    border: 2px solid lightgray;
+    color: rgba(175, 47, 47, 0.15); }
 
 .all-data {
   display: flex;
@@ -87,7 +94,7 @@
   padding: 10px;
   border-radius: 10px; }
   .all-posts__show .all-posts__show--user {
-    border: 1px solid black;
+    border: 1px solid lightslategray;
     padding: 10px;
     border-radius: 10px; }
   .all-posts__show .all-posts__show--post {
